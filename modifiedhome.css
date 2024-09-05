@@ -1,0 +1,484 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home-page {
+  position: relative;
+}
+.home-page .infobar {
+  /* display: grid; */
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.infobar .info1 img {
+  width: 50px;
+  height: 50px;
+}
+.infobar .info2 button {
+  padding: 20px;
+  outline: none;
+  background: #03045e;
+  color: white;
+  /* outline: none; */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.infobar .nav {
+  display: flex;
+}
+.nav ul {
+  display: flex;
+  padding: 20px;
+}
+.nav ul li {
+  margin-right: 40px;
+  list-style-type: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+.nav ul li a:hover {
+  color: #03045e;
+}
+.infobar .info4 {
+  display: none;
+}
+#menuList {
+  transition: 0.5s ease;
+}
+.bodycontent {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  min-height: 100vh;
+  grid-template-columns: 60% 40%;
+  padding: 50px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 70px;
+}
+.txtcol h1 {
+  font-size: 4em;
+  color: #03045e;
+}
+.txtcol h2 {
+  font-size: 2em;
+  color: #023e5a;
+  margin-top: -10px;
+}
+.txtcol button {
+  width: 170px;
+  padding: 15px;
+  margin-top: 20px;
+  outline: none;
+  border: 1px solid #0077b6;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  background: #5579c6;
+  transition: 1s;
+}
+.txtcol button a:hover,
+.txtcol button:hover {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.txtcol button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 1s;
+}
+.imgcol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+/* Services rendered */
+.secondpage {
+  width: 100%;
+  margin-top: 60px;
+  background: #29c5fc;
+  padding: 40px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.secondpage .services {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+.secondpage .services h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.secondpage .services ul {
+  margin-top: 20px;
+}
+.secondpage .services ul li {
+  margin-top: 15px;
+}
+.secondpage .services ul li h2 {
+  font-size: 2em;
+}
+.wps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.wps h1 {
+  color: white;
+}
+.comment {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+}
+.comments {
+  width: 250px;
+  background: #0077b6;
+  margin-left: 20px;
+  padding: 20px;
+  color: white;
+}
+.comments .rate {
+  display: flex;
+}
+.comments h2 {
+  text-align: center;
+}
+.comments .rate h3 {
+  margin-left: 10px;
+  color: #03045e;
+  display: grid;
+}
+.thirdpage {
+  display: grid;
+  place-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.thirdpage h1 {
+  text-align: center;
+  color: #03045e;
+  margin-bottom: 20px;
+}
+.main {
+  width: 350px;
+  height: 500px;
+  background: #0077b6;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #0096c7;
+}
+#chk {
+  display: none;
+}
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+label {
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 45px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+label:hover {
+  opacity: 0.7;
+}
+input {
+  width: 70%;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  margin: 15px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+input::placeholder {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.main form button {
+  width: 40%;
+  margin: 20px auto;
+  justify-content: center;
+  display: flex;
+  color: white;
+  background: #0096c7;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+button:hover {
+  opacity: 0.8;
+}
+.login {
+  height: 460px;
+  background: #3a7bdc;
+  border-radius: 70% / 10%;
+  transform: translateY(-140px);
+  transition: 0.5s ease-in-out;
+}
+.login label {
+  color: white;
+  transform: scale(0.6);
+}
+.login a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  transition: 1s;
+  margin-top: 30px;
+}
+.login a:hover {
+  opacity: 0.7;
+}
+.login input {
+  height: 20px;
+  margin-top: 30px;
+}
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
+}
+.password-input {
+  position: relative;
+}
+.password-input input {
+  position: relative;
+}
+.password-input img {
+  width: 15px;
+  height: 15px;
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: 15px;
+  right: 53px;
+  cursor: pointer;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 160px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: #03045e;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.footer .col1 {
+  display: block;
+}
+.footer .col1 a {
+  display: block;
+  color: white;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer .col1 .lang {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background: #303030;
+  color: white;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+}
+.footer .col1 p {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.footer .col2 a {
+  display: block;
+  color: white;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer .col3 a {
+  display: block;
+  color: white;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer .col4 a {
+  display: block;
+  color: white;
+  margin-top: 20px;
+  font-size: 13px;
+}
+@media screen and (min-width: 200px) and (max-width: 760px) {
+  .infobar .info2 {
+    margin-left: 30px;
+  }
+  .logo {
+    font-size: 15px;
+  }
+  .nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5px;
+    background: #0077b6;
+    padding: 20px;
+  }
+  .nav ul li {
+    margin-top: 20px;
+    padding: 15px;
+  }
+  .infobar .info4 {
+    display: block;
+  }
+  .infobar .info4 img {
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+  }
+  .bodycontent {
+    display: block;
+    padding: 5%;
+  }
+  .txtcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .txtcol h1 {
+    font-size: 250%;
+    font-weight: bold;
+    width: 100%;
+  }
+  .txtcol h2 {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .imgcol img {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+  }
+  .secondpage .services h1 {
+    font-size: 2em;
+  }
+  .secondpage .services ul li h2 {
+    font-size: 1em;
+  }
+  .comment {
+    display: block;
+  }
+  .comments {
+    margin-top: 20px;
+  }
+  .thirdpage {
+    margin-top: 30px;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    margin-top: 70%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1020px) {
+  .bodycontent {
+    display: block;
+    padding: 15%;
+  }
+  .txtcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .txtcol h1 {
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .txtcol h2 {
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .txtcol button {
+    margin-top: 30px;
+    padding: 20px;
+    width: 250px;
+  }
+  .txtcol button a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .imgcol {
+    display: grid;
+    place-content: center;
+  }
+  .imgcol img {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+  }
+  .comments {
+    margin-top: 30px;
+    width: 200px;
+  }
+  .footer {
+    margin-top: 2%;
+  }
+}
+
+.dark {
+  background: #023e5a;
+}

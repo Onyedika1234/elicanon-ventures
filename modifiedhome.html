@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="modifiedhome.css" />
+    <link
+      rel="shortcut icon"
+      href="images/Screenshot_20240727-140710.png"
+      type="image/icon"
+    />
+  </head>
+  <body>
+    <div class="home-page">
+      <div class="infobar">
+        <div class="info1">
+          <img src="images/Screenshot_20240727-140710.png" alt="" />
+        </div>
+        <div class="info2">
+          <button id="toggleColor">Dark Mode</button>
+        </div>
+        <div class="nav">
+          <ul id="menuList">
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a href="#account">ACCOUNT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info4">
+          <img src="images/menu icon.png" alt="" onclick="toggleMenu()" />
+        </div>
+      </div>
+      <!-- <div class="bodycontent">
+        <div class="txtcol">
+          <h1>Elicanon Ventures</h1>
+          <h2>Motto: Your grace is sufficient for us</h2>
+          <button>
+            <a href="#account">Do businnes with us</a>
+          </button>
+        </div>
+      </div> -->
+      <div class="bodycontent">
+        <div class="txtcol">
+          <h1 class="heading">Elicanon Ventures</h1>
+          <h2 class="heading1">Motto: Your grace is sufficient for us</h2>
+          <button>
+            <a href="#account">Do businnes with us</a>
+          </button>
+        </div>
+        <div class="imgcol">
+          <img src="images/engine oils.jfif" alt="" />
+          <img src="images/gas images.jfif" alt="" />
+          <img src="images/gear oils.jfif" alt="" />
+          <img src="images/oil filter iage.jfif" alt="" />
+        </div>
+      </div>
+      <div class="secondpage" id="about">
+        <div class="services">
+          <h1>Services</h1>
+          <ul>
+            <li>
+              <h2>We deal in the sales of engine oils and gear oils.</h2>
+            </li>
+            <li>
+              <h2>Dealers in all air condintion gases e.g Snow.</h2>
+            </li>
+            <li>
+              <h2>Dealers in all kind of oil filters.</h2>
+            </li>
+            <li>
+              <h2>Other Motor accecories to service you car.</h2>
+            </li>
+          </ul>
+        </div>
+        <div class="wps">
+          <h1>What people say</h1>
+          <div class="comment">
+            <div class="comments">
+              <h2>CHIDOVAS INVESTMENT</h2>
+              <p>This is a very good store. I give it a five star</p>
+              <div class="rate">
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+              </div>
+            </div>
+            <div class="comments">
+              <h2>Mr. Obiajuru</h2>
+              <p>
+                Doing business with Elicanon Ventures is a great experience i
+                guess is a five for me.
+              </p>
+              <div class="rate">
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+              </div>
+            </div>
+            <div class="comments">
+              <h2>I.K BENZ</h2>
+              <p>
+                Elicanon Ventures offer the best services that i have ever seen
+                a five star rating is what i will give them
+              </p>
+              <div class="rate">
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+              </div>
+            </div>
+            <div class="comments">
+              <h2>E.C BENZ</h2>
+              <p>
+                The way they offer their products to their customers is so
+                extraodinary. This is the best store i have visited
+              </p>
+              <div class="rate">
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+                <h3>&bigstar;</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thirdpage" id="account">
+        <h1>Join our business</h1>
+        <div class="main">
+          <input type="checkbox" id="chk" aria-hidden="true" />
+          <div class="signup">
+            <form action="">
+              <label for="chk" aria-hidden="true">Sign up</label>
+              <input
+                type="text"
+                name="txt"
+                placeholder="Username"
+                required
+                id="name"
+              />
+              <input
+                type="email"
+                placeholder="Email address"
+                required
+                id="email"
+              />
+              <input type="text" placeholder="City" required id="city" />
+              <div class="password-input">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  required
+                  class="password1"
+                />
+                <img
+                  src="images/eye open icon.png"
+                  id="eye1"
+                  onclick="togglePassword1()"
+                />
+              </div>
+              <div class="password-input">
+                <input
+                  type="password"
+                  placeholder="Re-enter Password"
+                  required
+                  class="password2"
+                />
+                <img
+                  src="images/eye open icon.png"
+                  alt=""
+                  id="eye2"
+                  onclick="togglePassword2()"
+                />
+              </div>
+              <button id="submit">Submit</button>
+            </form>
+          </div>
+          <div class="login">
+            <form>
+              <label for="chk" aria-hidden="true">Login</label>
+              <input
+                type="email"
+                placeholder="Email address"
+                required
+                id="email-login"
+              />
+              <div class="password-input">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="pswd"
+                  required
+                  class="password3"
+                />
+                <img
+                  src="images/eye open icon.png"
+                  alt=""
+                  id="eye3"
+                  onclick="togglePassword3()"
+                />
+              </div>
+              <a href="#">Forget Password</a>
+              <button id="login">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="col1">
+          <a href="#">Questions? Contactus</a>
+          <a href="#">FAQ</a>
+          <a href="#">Investor relations</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed test</a>
+          <button class="lang">English</button>
+          <p>Elicanon Ventures</p>
+        </div>
+        <div class="col2">
+          <a href="#">Help center</a>
+          <a href="#">jobs</a>
+          <a href="#">cookie prefrence</a>
+          <a href="#">legal notice</a>
+        </div>
+        <div class="col3">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Gmail</a>
+        </div>
+        <div class="col4">
+          <a href="#">Main Centre</a>
+          <a href="#">Term of use</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <script src="modifiedhome.js"></script>
+  </body>
+</html>
